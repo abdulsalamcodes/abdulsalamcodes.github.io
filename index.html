@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/edb225efbd.js" crossorigin="anonymous"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+   
+    body {
+      color: rgb(190, 188, 188);
+      font-family: 'Libre Franklin', sans-serif;
+      font-size: 20px;
+    }
+    .icons {
+      color: hsl(223, 87%, 63%);
+      padding: 10px;
+    }
+    .container {
+      width: 80%;
+      margin: 5% auto;
+      text-align: center;
+    }
+    .container h1 {
+      color: hsl(0, 0%, 59%);
+      font-weight: 300;
+    }
+    .container h1 span {
+      color: hsl(209, 33%, 12%);
+      font-weight: 700;
+    }
+    #image {
+      width: 100%;
+      height: auto;
+      max-width: 100%;
+      margin: 5%;;
+    }
+    .forms {
+      justify-content: center;
+      display: flex;
+      text-align: center;
+    }
+    input {
+      padding: 2%;
+      border-radius: 30px;
+      border: 1px solid rgb(190, 188, 188);
+      margin: 3% 0 7%;
+    }
+
+    #email {
+      width: 40%;
+      margin-right: 1%;
+    }
+    #submit {
+      width: 20%;
+      background-color: hsl(223, 87%, 63%);
+      color: white;
+      transition: hover ease-in-out 2s;
+      font-weight: 600;
+    }
+    #submit:active {
+      background-color: hsl(223, 100%, 88%);
+      color: hsl(209, 33%, 12%);
+
+    }
+    #submit:hover {
+      cursor: pointer;
+      box-shadow: 2x 1px 2px 3px hsl(223, 100%, 88%);
+      transform: scaleX();
+
+    }
+    .attribution { font-size: 11px; text-align: center;  }
+    .attribution a { color: hsl(228, 45%, 44%); }
+
+    @media (max-width: 500px) {
+      .container {
+        margin-top: 17%;
+      }
+      .forms {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      #email, #submit {
+        width: 80%;
+      }
+
+      body {
+        font-size: small;
+      }
+      input {
+        padding: 4%;
+      }
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img src="images/logo.svg" alt="">
+    <h1> We are launching <span>soon!</span> </h1>
+    <p> Subscribe and get notified</p>
+    <form action="#" method="post">
+      <div class="forms">
+        <input type="email" name="email" id="email" placeholder="Your email address...">
+        <input type="button" name="submit" id="submit" value=" Notify Me">
+      </div>
+    </form>
+    <img src="images/illustration-dashboard.png" alt="" id="image">
+    <footer>
+      <p>
+        <i class="fab icons fa-facebook"></i>
+        <i class="fab icons fa-twitter"></i>
+        <i class="fab icons fa-instagram"></i>
+      </p>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Abdulsalam</a>.
+      </p>
+      <p class="attribution"> &copy; Copyright Ping. All rights reserved.</p>
+  </div>
+  </footer>
+</body>
+</html>
